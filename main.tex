@@ -11,8 +11,8 @@
 \usepackage{multicol}
 \usepackage{teamnote}
 
-% \teamnote{Seoul Nataional University}{goldttalkak}{구윤우, 정민건, 황하율}
-\teamnote{}{UCPC 딸깍하기}{구윤우, 정민건, 황하율}
+\teamnote{Seoul Nataional University}{ICPCTTALKAK}{구윤우, 정민건, 황하율}
+% \teamnote{}{UCPC 딸깍하기}{구윤우, 정민건, 황하율}
 
 % Guide to use
   % Fix school name, team name, and teammate name at line 14
@@ -37,6 +37,21 @@
 \pagebreak 
 
 \section{자료 구조}
+
+\Algorithm{펜윅 트리(Fenwick Tree / BIT) + 예제}
+{1-based 인덱스, 점 갱신과 구간 합}{$O(\log N)$, 공간 $O(N)$}
+{cpp}{code/DataStructure/Fenwick.cpp}
+{}
+
+\Algorithm{bitset 사용법 + 부분집합 합 예제}
+{크기는 컴파일 시 결정. 0번 비트는 가장 오른쪽 비트.}{}
+{cpp}{code/DataStructure/Bitset.cpp}
+{}
+
+\Algorithm{unordered\_set / unordered\_map 사용자 정의 해시}
+{같은 키는 반드시 같은 해시값을 반환해야 한다.}{삽입/조회 평균 $O(1)$, 최악 $O(N)$}
+{cpp}{code/DataStructure/CustomHash.cpp}
+{}
 
 \Algorithm{세그먼트 트리}
 {}{$O(\log N)$}
@@ -181,10 +196,12 @@
 
 \section{문자열}
 
-\Algorithm{문자열 해싱}
-{}{build: $O(N)$, get: $O(1)$}
+\Algorithm{문자열 해싱(Rolling Hash) + 예제}
+{1-based 닫힌 구간. 길이가 같은 문자열끼리 비교하며, 해시 충돌 가능성이 있다.}{build: $O(N)$, get: $O(1)$}
 {cpp}{code/String/Hashing.cpp}
 {JusticeHui}
+
+\inputminted{cpp}{code/String/HashingExample.cpp}
 
 \Algorithm{문자열 매칭 - KMP}
 {}{GetFail: $O(\vert P\vert)$, $O(\vert S\vert + \vert P\vert)$}
@@ -275,6 +292,11 @@
 {}{}
 {cpp}{code/Misc/Cpp-Grammer.cpp}
 {JusticeHui}
+
+\Algorithm{C++ 입력: EOF, 한 줄 입력 / 출력 precision}
+{각 함수는 독립적인 사용 예제.}{}
+{cpp}{code/Misc/IO.cpp}
+{}
 
 \Algorithm{빠른 입력(Fast Input from STDIN)}
 {}{}
