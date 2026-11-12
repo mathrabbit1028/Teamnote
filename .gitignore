@@ -35,6 +35,3 @@ _minted*/
 *.pyg
 *.pygstyle
 *.pygtex
-
-# Generated team note (keep other PDF assets trackable)
-/main.pdf
