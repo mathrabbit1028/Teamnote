@@ -1,4 +1,4 @@
-# Teamnote for ICPCTTAKKAK
+# Teamnote for ICPCTTALKAK
 
 - Team members: 구윤우, 정민건, 황하율
 
